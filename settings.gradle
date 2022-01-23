@@ -5,4 +5,11 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
 include ':app'
+Set<String> pluginSet = new HashSet<>()
+//pluginSet.add("EzywPluginScriptAndroid")
+for (String plugin in pluginSet) {
+    include ":${plugin}"
+    project(":${plugin}").projectDir = new File(settingsDir, "../${plugin}")
+}
