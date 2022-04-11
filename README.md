@@ -1,2 +1,2 @@
 # EzywAppSampleAndroid
-The simple android app project structure
+The sample android app project structure
