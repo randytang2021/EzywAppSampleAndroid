@@ -1,4 +1,4 @@
-name: Android App Project CI
+name: Ezyw App Sample CI Checker
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ develop ]
 
 jobs:
-  build:
+  ezyw_sample_app_protocol_check:
 
     runs-on: ubuntu-latest
 
