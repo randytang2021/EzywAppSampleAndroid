@@ -12,6 +12,23 @@ buildscript {
     }
 }
 
+
+
+
+allprojects {
+
+    project.ext {
+        compileSdkVersion = 31
+        buildToolsVersion = "30.0.3"
+        minSdkVersion = 24
+        targetSdkVersion = 30
+        versionCode = 10000
+        versionName = "1.00.0"
+    }
+
+}
+
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
